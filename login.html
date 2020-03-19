@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>Orderista</title>
-        <link rel="stylesheet" type="text/css" href="home.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" type="text/css" href="design.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
@@ -13,7 +13,7 @@
         <header>
             <nav>
                 <div class="row1 clearfix">
-                    <img src="logo.jpeg" class="logo">
+                    <img src="log.jpeg" class="logo">
                     <ul class="main-nav" id="check-class">
                         <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span>SignUp</a></li>
                         <li><a href="#"><span class="glyphicon glyphicon-cog"></span>Settings</a></li>
@@ -35,7 +35,7 @@
                 <div class="row">
                     <div class="col-md-4 col-sm-4 col-xs-12"></div>
                     <div class="col-md-4 col-sm-4 col-xs-12">
-            
+
             <form class="form-container">
                 <div class="form-group">
                   <label for="exampleInputEmail1">Email</label>
@@ -51,29 +51,58 @@
                   <label class="form-check-label" for="exampleCheck1">Remember me</label><br>
                 </div>
                 <button type="submit" class="btn btn-success btn-block">Submit</button>
-              </form>
+                <a href="reset.html">Forgot_Password?</a>
+            </form>
               </div>
-              <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="col-md-4 col-sm-4 col-xs-12"></div>
               </div>
-              </div>
-              </div>
-    
-        </header>
+            
+           </div>
+
+         </header>
 
         <script type="text/javascript">
               function slideshow()
               {
                   var x=document.getElementById('check-class');
-                  if(x.style.display==="none"){
+                  if(x.style.display=="none"){
                       x.style.display="block";
                   }
                   else{
                       x.style.display="none";
                   }
               }
-              
+
         </script>
-        
+
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.11.0/firebase.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAcM3wkkq3YlraB5HMmVzPtafBNxcSZQoY",
+    authDomain: "miniproject-9dee1.firebaseapp.com",
+    databaseURL: "https://miniproject-9dee1.firebaseio.com",
+    projectId: "miniproject-9dee1",
+    storageBucket: "miniproject-9dee1.appspot.com",
+    messagingSenderId: "410539804770",
+    appId: "1:410539804770:web:d8af45223668059336e93b",
+    measurementId: "G-NT4LQEJF7J"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+  <script src="login.js"></script>
+
+
     </body>
 
-</html>
+</html> 
